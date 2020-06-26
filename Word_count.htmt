@@ -1,0 +1,23 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv='Content-Type' content="text/html;charset:UTF-8">
+<body>
+
+    <textarea id="te" onclick="this.value=''" onchange="ally()" style="
+    height: 200px;
+">
+
+</textarea>
+<p id='res' Style='font-size:18pt'></p>
+</body>
+<script>
+function ally(){
+//Hasan
+let tev=te.value
+tev=tev.replace(/  +/g,' ')
+tev= tev.split(' ')
+
+res.innerText=tev.length
+}
+</script>
+</html>
